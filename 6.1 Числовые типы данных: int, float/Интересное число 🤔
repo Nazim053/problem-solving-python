@@ -1,0 +1,12 @@
+number = int(input())
+firstNumber = number//100
+averageNumber = ((number//10)%10)
+lastNumber =number%10
+mxNumber = max(firstNumber, averageNumber, lastNumber)
+mnNumber = min(firstNumber, averageNumber, lastNumber)
+
+if ( mxNumber - mnNumber) == sum((firstNumber, averageNumber, lastNumber)) - (mnNumber + mxNumber):
+    print('Число интересное')
+else:
+    print('Число неинтересное')
+
