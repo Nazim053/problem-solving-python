@@ -1,0 +1,16 @@
+country1, country2, country3 = input(), input(), input()
+country1Leg1, country1Leg2, country1Leg3 = len(country1), len(country2), len(country3) 
+countryMin = min((country1Leg1, country1Leg2, country1Leg3))
+countryMax = max((country1Leg1, country1Leg2, country1Leg3))
+
+if(country1Leg1 == countryMin):
+    print(country1)
+elif(country1Leg2 == countryMin):
+    print(country2)
+else: print(country3)
+
+if(country1Leg1 == countryMax):
+    print(country1)
+elif(country1Leg2 == countryMax):
+    print(country2)
+else: print(country3)
