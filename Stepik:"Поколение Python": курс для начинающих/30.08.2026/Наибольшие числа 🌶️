@@ -1,0 +1,14 @@
+n = int(input())
+maxCount = 0
+predMaxCount = 0
+
+for _ in range(1, n+1):
+    j = int(input())
+    if j > maxCount:
+        predMaxCount = maxCount
+        maxCount = j
+    if (j > predMaxCount and j < maxCount):
+        predMaxCount = j
+
+print(maxCount, predMaxCount, sep='\n')
+
