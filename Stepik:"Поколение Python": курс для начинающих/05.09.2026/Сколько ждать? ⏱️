@@ -1,0 +1,13 @@
+player = input()
+count = -1
+AlexandraFound = False
+
+while player != 'Левон':
+    if player == 'Александра':
+        AlexandraFound = True
+    if AlexandraFound == True:
+        count += 1
+    player = input()
+
+print(count)
+
