@@ -1,0 +1,16 @@
+h1 = int(input())
+m1 = int(input())
+h2 = int(input())
+m2 = int(input())
+
+interval1 = ((h1*60)+m1)
+
+interval2 = ((h2*60)+m2)
+interval2hour = interval2 // 60
+interval2Minute = (interval2 - ((interval2 // 60)*60))
+
+while interval1 <= interval2 :
+    interval1hour = interval1 // 60
+    interval1Minute = (interval1 - ((interval1 // 60)*60))
+    print(f"{interval1hour:02d}", f"{interval1Minute:02d}", sep=':')
+    interval1 += 1
