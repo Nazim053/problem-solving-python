@@ -1,0 +1,18 @@
+a = int(input())
+b = int(input())
+sumMaxNumber = 0
+maxNumber = 0
+sumNumber = 0
+
+for i in range (a, b+1):
+    for j in range (1, i+1):
+        if (i % j == 0):
+            sumNumber += j
+            
+    if (sumMaxNumber <= sumNumber):
+        sumMaxNumber = sumNumber
+        maxNumber = i
+    
+    sumNumber = 0
+                
+print(maxNumber, sumMaxNumber, sep=' ')
